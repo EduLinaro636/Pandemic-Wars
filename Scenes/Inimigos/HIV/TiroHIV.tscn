@@ -1,0 +1,133 @@
+[gd_scene load_steps=16 format=1]
+
+[ext_resource path="res://Scripts/Fase 3/TiroHIV.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/Inimigos/Tiros/dna_3_4.png" type="Texture" id=2]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -14.2569, 7.42031, -15.1319, 5.04531, -13.7569, 4.42031, -13.2569, 7.42031 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -4.63189, 13.7953, -7.75689, 13.9203, -8.00689, 12.0453, -2.88189, 11.1703 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -2.88189, 11.1703, -8.00689, 12.0453, -8.38189, 10.5453, -2.25689, 7.42031 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -2.25689, 7.42031, -8.38189, 10.5453, -9.38189, 8.79531, -7.38189, 2.54531, 6.49311, 2.67031 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -11.0069, 7.42031, -13.2569, 7.42031, -13.7569, 4.42031, -9.88189, 2.29531, -7.38189, 2.54531 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -9.38189, 8.79531, -11.0069, 7.42031, -7.38189, 2.54531 )
+
+[sub_resource type="ConvexPolygonShape2D" id=7]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 10.3681, -7.32969, 13.3681, -7.82969, 14.6181, -6.57969, 14.1181, -4.57969, 12.3681, -2.82969, 10.2431, -2.32969, 7.49311, -2.07969 )
+
+[sub_resource type="ConvexPolygonShape2D" id=8]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 1.86811, -9.07969, 8.86811, -8.57969, 10.3681, -7.32969, 7.49311, -2.07969, 1.36811, -7.70469 )
+
+[sub_resource type="ConvexPolygonShape2D" id=9]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 2.36811, -12.5797, 3.74311, -14.8297, 6.36811, -14.8297, 7.61811, -13.2047, 6.99311, -11.0797, 1.86811, -9.07969 )
+
+[sub_resource type="ConvexPolygonShape2D" id=10]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 1.86811, -9.07969, 6.99311, -11.0797, 8.86811, -8.57969 )
+
+[sub_resource type="ConvexPolygonShape2D" id=11]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 1.36811, -7.70469, 7.49311, -2.07969, 7.11811, -1.20469, -1.50689, -7.32969 )
+
+[sub_resource type="ConvexPolygonShape2D" id=12]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -7.38189, -1.95469, -5.63189, -5.45469, -1.50689, -7.32969, 7.11811, -1.20469, 6.49311, 2.67031, -7.38189, 2.54531 )
+
+[sub_resource type="ConvexPolygonShape2D" id=13]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -2.25689, 7.42031, 6.49311, 2.67031, 5.24311, 5.04531, 1.61811, 7.17031, -0.506886, 8.17031 )
+
+[node name="TiroHIV" type="Area2D"]
+
+z/z = -1
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 2 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 3 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/2/trigger = false
+shapes/3/shape = SubResource( 4 )
+shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/3/trigger = false
+shapes/4/shape = SubResource( 5 )
+shapes/4/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/4/trigger = false
+shapes/5/shape = SubResource( 6 )
+shapes/5/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/5/trigger = false
+shapes/6/shape = SubResource( 7 )
+shapes/6/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/6/trigger = false
+shapes/7/shape = SubResource( 8 )
+shapes/7/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/7/trigger = false
+shapes/8/shape = SubResource( 9 )
+shapes/8/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/8/trigger = false
+shapes/9/shape = SubResource( 10 )
+shapes/9/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/9/trigger = false
+shapes/10/shape = SubResource( 11 )
+shapes/10/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/10/trigger = false
+shapes/11/shape = SubResource( 12 )
+shapes/11/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/11/trigger = false
+shapes/12/shape = SubResource( 13 )
+shapes/12/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/12/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+
+texture = ExtResource( 2 )
+
+[node name="Poly" type="CollisionPolygon2D" parent="."]
+
+build_mode = 0
+polygon = Vector2Array( -13.7569, 4.42031, -9.88189, 2.29531, -7.38189, 2.54531, -7.38189, -1.95469, -5.63189, -5.45469, -1.50689, -7.32969, 1.36811, -7.70469, 1.86811, -9.07969, 2.36811, -12.5797, 3.74311, -14.8297, 6.36811, -14.8297, 7.61811, -13.2047, 6.99311, -11.0797, 8.86811, -8.57969, 10.3681, -7.32969, 13.3681, -7.82969, 14.6181, -6.57969, 14.1181, -4.57969, 12.3681, -2.82969, 10.2431, -2.32969, 7.49311, -2.07969, 7.11811, -1.20469, 6.49311, 2.67031, 5.24311, 5.04531, 1.61811, 7.17031, -0.506886, 8.17031, -2.25689, 7.42031, -2.88189, 11.1703, -4.63189, 13.7953, -7.75689, 13.9203, -8.00689, 12.0453, -8.38189, 10.5453, -9.38189, 8.79531, -11.0069, 7.42031, -13.2569, 7.42031, -14.2569, 7.42031, -15.1319, 5.04531 )
+shape_range = Vector2( 0, 12 )
+trigger = false
+
+[connection signal="area_enter" from="." to="." method="_on_TiroHIV_area_enter"]
+
+

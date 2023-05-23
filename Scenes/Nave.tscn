@@ -1,0 +1,336 @@
+[gd_scene load_steps=33 format=1]
+
+[ext_resource path="res://Scripts/Nave.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/Ship5.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/propulsorUp.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/propulsorDown.png" type="Texture" id=4]
+[ext_resource path="res://Sons/Jogador/explosion_jogador.wav" type="Sample" id=5]
+[ext_resource path="res://Sons/Jogador/hit_jogador.wav" type="Sample" id=6]
+[ext_resource path="res://Sons/Jogador/movi_down_left.wav" type="Sample" id=7]
+[ext_resource path="res://Sons/Jogador/movi_up_right.wav" type="Sample" id=8]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -17.3764, -12.9709, -24.8764, -22.4709, -18.3764, -21.4709, -4.3764, -8.97086 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -5.8764, -16.9709, -11.3764, -22.4709, -6.3764, -22.4709, -0.376404, -17.4709 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -20.8764, 26.5291, -46.8764, 28.0291, -44.3764, 21.0291 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 7.1236, -22.4709, -8.3764, -27.9709, -8.3764, -31.9709, -1.3764, -29.9709, 10.1236, -26.4709, 21.1236, -19.9709 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -33.3764, -18.4709, -37.3764, -20.9709, -34.8764, -23.9709, -23.3764, -15.9709 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -30.3764, -12.9709, -33.3764, -18.4709, -23.3764, -15.9709 )
+
+[sub_resource type="ConvexPolygonShape2D" id=7]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -4.3764, -8.97086, -5.8764, -16.9709, -0.376404, -17.4709, 5.6236, -11.9709, 19.6236, 24.0291 )
+
+[sub_resource type="ConvexPolygonShape2D" id=8]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -42.8764, -10.9709, -50.8764, -15.9709, -50.3764, -19.4709, -40.3764, -17.9709, -33.3764, -12.4709 )
+
+[sub_resource type="ConvexPolygonShape2D" id=9]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -40.3764, -4.97086, -42.8764, -10.9709, -33.3764, -12.4709, -17.8764, 24.5291, -20.8764, 26.5291 )
+
+[sub_resource type="ConvexPolygonShape2D" id=10]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 39.1236, 19.0291, 42.1236, -2.47086, 53.6236, 6.52914, 50.6236, 11.0291, 45.1236, 16.0291 )
+
+[sub_resource type="ConvexPolygonShape2D" id=11]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 9.6236, -15.4709, 7.1236, -22.4709, 21.1236, -19.9709, 21.6236, -14.9709 )
+
+[sub_resource type="ConvexPolygonShape2D" id=12]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -17.3764, -12.9709, -4.3764, -8.97086, 19.6236, 24.0291, 17.1236, 32.0291, -10.3764, 31.5291, -17.8764, 24.5291, -18.8764, -12.9709 )
+
+[sub_resource type="ConvexPolygonShape2D" id=13]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -20.8764, 26.5291, -44.3764, 21.0291, -44.8764, 17.5291, -44.8764, -2.97086, -40.3764, -4.97086 )
+
+[sub_resource type="ConvexPolygonShape2D" id=14]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -44.8764, 17.5291, -53.8764, 12.5291, -53.8764, 5.02914, -49.3764, 1.02914 )
+
+[sub_resource type="ConvexPolygonShape2D" id=15]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -44.8764, 17.5291, -49.3764, 1.02914, -44.8764, -2.97086 )
+
+[sub_resource type="ConvexPolygonShape2D" id=16]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -17.8764, 24.5291, -33.3764, -12.4709, -30.3764, -12.9709 )
+
+[sub_resource type="ConvexPolygonShape2D" id=17]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -17.8764, 24.5291, -30.3764, -12.9709, -23.3764, -15.9709, -18.8764, -12.9709 )
+
+[sub_resource type="ConvexPolygonShape2D" id=18]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 39.1236, 19.0291, 35.1236, 24.0291, 19.6236, 24.0291, 5.6236, -11.9709, 9.6236, -15.4709, 21.6236, -14.9709, 33.6236, -13.9709, 42.1236, -2.47086 )
+
+[sub_resource type="ConvexPolygonShape2D" id=19]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 45.1236, 16.0291, 50.6236, 11.0291, 50.6236, 11.0291 )
+
+[sub_resource type="Animation" id=20]
+
+resource/name = "hit"
+length = 1.7
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:visibility/visible")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ), "update":1, "values":[ false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true ] }
+
+[sub_resource type="Animation" id=21]
+
+resource/name = "idle"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Particles2D:config/emitting")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+
+[sub_resource type="Animation" id=22]
+
+length = 2.5
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Particles2D:config/emitting")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0, 1.4 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ true, false ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite:visibility/opacity")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0, 0.9 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ 1.0, 0.0 ] }
+
+[sub_resource type="ColorRamp" id=23]
+
+offsets = FloatArray( 0, 0.292398, 0.502924, 0.725146, 0.918129 )
+colors = ColorArray( 0.976563, 0.961721, 0.0267029, 1, 0.980469, 0.718655, 0.0229797, 1, 1, 0.585938, 0, 1, 0.976563, 0.202179, 0.202179, 1, 0.964844, 0.0414581, 0.0414581, 0 )
+
+[sub_resource type="SampleLibrary" id=24]
+
+samples/explosion_jogador = { "db":0.0, "pitch":1.0, "sample":ExtResource( 5 ) }
+samples/hit_jogador = { "db":0.0, "pitch":1.0, "sample":ExtResource( 6 ) }
+samples/movi_down_left = { "db":0.0, "pitch":1.0, "sample":ExtResource( 7 ) }
+samples/movi_up_right = { "db":0.0, "pitch":1.0, "sample":ExtResource( 8 ) }
+
+[node name="Nave" type="Area2D"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 2 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 3 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/2/trigger = false
+shapes/3/shape = SubResource( 4 )
+shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/3/trigger = false
+shapes/4/shape = SubResource( 5 )
+shapes/4/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/4/trigger = false
+shapes/5/shape = SubResource( 6 )
+shapes/5/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/5/trigger = false
+shapes/6/shape = SubResource( 7 )
+shapes/6/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/6/trigger = false
+shapes/7/shape = SubResource( 8 )
+shapes/7/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/7/trigger = false
+shapes/8/shape = SubResource( 9 )
+shapes/8/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/8/trigger = false
+shapes/9/shape = SubResource( 10 )
+shapes/9/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/9/trigger = false
+shapes/10/shape = SubResource( 11 )
+shapes/10/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/10/trigger = false
+shapes/11/shape = SubResource( 12 )
+shapes/11/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/11/trigger = false
+shapes/12/shape = SubResource( 13 )
+shapes/12/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/12/trigger = false
+shapes/13/shape = SubResource( 14 )
+shapes/13/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/13/trigger = false
+shapes/14/shape = SubResource( 15 )
+shapes/14/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/14/trigger = false
+shapes/15/shape = SubResource( 16 )
+shapes/15/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/15/trigger = false
+shapes/16/shape = SubResource( 17 )
+shapes/16/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/16/trigger = false
+shapes/17/shape = SubResource( 18 )
+shapes/17/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/17/trigger = false
+shapes/18/shape = SubResource( 19 )
+shapes/18/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/18/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+
+texture = ExtResource( 2 )
+
+[node name="PosTiro" type="Position2D" parent="."]
+
+transform/pos = Vector2( 54, 8 )
+
+[node name="Poly" type="CollisionPolygon2D" parent="."]
+
+visibility/visible = false
+build_mode = 0
+polygon = Vector2Array( -53.8764, 5.02914, -49.3764, 1.02914, -44.8764, -2.97086, -40.3764, -4.97086, -42.8764, -10.9709, -50.8764, -15.9709, -50.3764, -19.4709, -40.3764, -17.9709, -33.3764, -12.4709, -30.3764, -12.9709, -33.3764, -18.4709, -37.3764, -20.9709, -34.8764, -23.9709, -23.3764, -15.9709, -18.8764, -12.9709, -17.3764, -12.9709, -24.8764, -22.4709, -18.3764, -21.4709, -4.3764, -8.97086, -5.8764, -16.9709, -11.3764, -22.4709, -6.3764, -22.4709, -0.376404, -17.4709, 5.6236, -11.9709, 9.6236, -15.4709, 7.1236, -22.4709, -8.3764, -27.9709, -8.3764, -31.9709, -1.3764, -29.9709, 10.1236, -26.4709, 21.1236, -19.9709, 21.6236, -14.9709, 33.6236, -13.9709, 42.1236, -2.47086, 53.6236, 6.52914, 50.6236, 11.0291, 50.6236, 11.0291, 45.1236, 16.0291, 39.1236, 19.0291, 35.1236, 24.0291, 19.6236, 24.0291, 17.1236, 32.0291, -10.3764, 31.5291, -17.8764, 24.5291, -20.8764, 26.5291, -46.8764, 28.0291, -44.3764, 21.0291, -44.8764, 17.5291, -53.8764, 12.5291 )
+shape_range = Vector2( 0, 18 )
+trigger = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/hit = SubResource( 20 )
+anims/idle = SubResource( 21 )
+anims/morte = SubResource( 22 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[node name="Particles2D" type="Particles2D" parent="."]
+
+transform/pos = Vector2( 0, 2 )
+config/amount = 32
+config/lifetime = 1.4
+config/emitting = false
+config/explosiveness = 0.3
+params/direction = 10.0
+params/spread = 360.0
+params/linear_velocity = 70.0
+params/spin_velocity = 0.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 0.0
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 15.0
+params/final_size = 7.0
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+randomness/direction = 1.0
+randomness/spread = 0.7
+randomness/initial_size = 0.7
+randomness/final_size = 0.5
+color/color = Color( 0.0351563, 0.00576782, 0.00576782, 1 )
+color/color_ramp = SubResource( 23 )
+
+[node name="propulsorLeft" type="Sprite" parent="."]
+
+visibility/visible = false
+transform/pos = Vector2( -74, 8 )
+transform/scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 3 )
+
+[node name="propulsorDown" type="Sprite" parent="."]
+
+visibility/visible = false
+transform/pos = Vector2( -63, -12.5 )
+transform/rot = -245.538
+transform/scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 3 )
+flip_h = true
+flip_v = true
+
+[node name="propulsorRight" type="Sprite" parent="."]
+
+visibility/visible = false
+transform/pos = Vector2( -76, 8 )
+transform/scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 4 )
+
+[node name="propulsorUp" type="Sprite" parent="."]
+
+visibility/visible = false
+transform/pos = Vector2( -61, 29.5 )
+transform/rot = 74.2971
+transform/scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 4 )
+
+[node name="Sample" type="SamplePlayer2D" parent="."]
+
+params/volume_db = 0.0
+params/pitch_scale = 1.0
+params/attenuation/min_distance = 1.0
+params/attenuation/max_distance = 2048.0
+params/attenuation/distance_exp = 1.0
+config/polyphony = 2
+config/samples = SubResource( 24 )
+config/pitch_random = 0.0
+
+[node name="Restart" type="Timer" parent="."]
+
+process_mode = 1
+wait_time = 6.0
+one_shot = false
+autostart = false
+
+[connection signal="timeout" from="Restart" to="." method="_on_Restart_timeout"]
+
+
